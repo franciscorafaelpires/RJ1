@@ -181,34 +181,6 @@ let guerraInfinita = [{
 ]
 
 
-function personagemMaisForte(personagens){
-  let personagemMaisForte = ''
-  let personagemMaisVeloz = ''
-  let personagemMaisResistente = ''
-  let maiorForca = 0;
-  let maiorVelocidade = 0;
-  let maiorResistencia = 0;
-  for (personagem in personagens) {
-    const atributoForca = personagens[personagem].forca
-    const atributoVelocidade = personagens[personagem].velocidade
-    const atributoResistencia = personagens[personagem].resistencia
-    if (atributoForca > maiorForca) {
-      maiorForca = atributoForca
-      personagemMaisForte = personagens[personagem].descricao()
-    }
-    if (atributoVelocidade > maiorVelocidade) {
-      maiorVelocidade = atributoVelocidade
-      personagemMaisVeloz = personagens[personagem].descricao()
-    }
-    if (atributoResistencia > maiorResistencia) {
-      maiorResistencia = atributoResistencia
-      personagemMaisResistente = personagens[personagem].descricao()
-    }
-  }
-  return personagemMaisForte, personagemMaisVeloz, personagemMaisResistente
-}
-
-
 function encontrarMaiorForca(personagens) {
   let personagemMaisForte = ''
   let maiorForca = 0;
